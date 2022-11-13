@@ -32,7 +32,8 @@ Lita.configure do |config|
   # config.handlers.some_handler.some_config_key = "value"
   if ENV.fetch("RACK_ENV", "development") == "production"
 	config.robot.adapter = :slack
-	config.adapters.slack.token = ENV.fetch("SLACK_API_KEY", "")
+	#config.adapters.slack.token = ENV.fetch("SLACK_API_KEY", "")
+  config.adapters.slack.token = "xoxb-4376549811665-4363813608099-7OHFfVAysFg9cr1B9BcdRWbu"
   else
 	config.robot.adapter = :shell
   end

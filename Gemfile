@@ -1,10 +1,8 @@
 source "https://rubygems.org"
-ruby "3.1.2"
 
 gem "lita"
 gem "lita-doubler-pb"
 gem "lita-slack"
-
 
 # Uncomment to use the HipChat adapter
 # gem "lita-hipchat"
@@ -16,3 +14,4 @@ gem "lita-slack"
 # For example:
 # gem "lita-google-images"
 # gem "lita-karma"
+

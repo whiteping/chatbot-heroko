@@ -3,10 +3,14 @@ GEM
   specs:
     concurrent-ruby (1.1.10)
     connection_pool (2.3.0)
+    eventmachine (1.2.7)
     faraday (2.6.0)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
+    faye-websocket (0.11.1)
+      eventmachine (>= 0.12.0)
+      websocket-driver (>= 0.5.1)
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -25,6 +29,14 @@ GEM
       rb-readline (>= 0.5)
       redis-namespace (>= 1.7)
       thor (>= 1.0)
+    lita-doubler-pb (0.1.0)
+      lita (>= 4.8)
+    lita-slack (1.8.0)
+      eventmachine
+      faraday
+      faye-websocket (>= 0.8.0)
+      lita (>= 4.7.1)
+      multi_json
     multi_json (1.15.0)
     nio4r (2.5.8)
     puma (5.6.5)
@@ -41,12 +53,17 @@ GEM
     thor (1.2.1)
     url_mount (0.2.1)
       rack
+    websocket-driver (0.7.5)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   lita
+  lita-doubler-pb
+  lita-slack
 
 BUNDLED WITH
    2.2.22
